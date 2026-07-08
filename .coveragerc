@@ -1,0 +1,9 @@
+[run]
+source = backend,ml-pipeline
+omit =
+    backend/main.py
+    ml-pipeline/training/train.py
+
+[report]
+fail_under = 80
+show_missing = true

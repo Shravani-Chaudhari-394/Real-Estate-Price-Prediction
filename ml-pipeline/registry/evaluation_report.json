@@ -1,0 +1,29 @@
+{
+  "xgboost": {
+    "model": "xgboost",
+    "mae": 1672313.12,
+    "mape": 7.05,
+    "r2": 0.9758,
+    "test_mae": 1635462.85,
+    "test_mape": 6.83,
+    "test_r2": 0.9788
+  },
+  "neural_network": {
+    "model": "neural_network",
+    "mae": 3423643.02,
+    "mape": 21.7,
+    "r2": 0.9261,
+    "test_mae": 3551371.07,
+    "test_mape": 21.78,
+    "test_r2": 0.9188
+  },
+  "ensemble": {
+    "model": "ensemble",
+    "mae": 2086770.77,
+    "mape": 10.81,
+    "r2": 0.968,
+    "test_mae": 2057327.76,
+    "test_mape": 10.77,
+    "test_r2": 0.9683
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "dashboard": {
+    "title": "Real Estate ML System",
+    "panels": [
+      {
+        "title": "Predictions per Minute",
+        "type": "graph",
+        "targets": [{ "expr": "rate(predictions_total[1m])" }]
+      },
+      {
+        "title": "Prediction Latency (P95)",
+        "type": "graph",
+        "targets": [{ "expr": "histogram_quantile(0.95, rate(prediction_latency_seconds_bucket[5m]))" }]
+      },
+      {
+        "title": "Error Rate",
+        "type": "graph",
+        "targets": [{ "expr": "rate(prediction_errors_total[5m])" }]
+      }
+    ]
+  }
+}
